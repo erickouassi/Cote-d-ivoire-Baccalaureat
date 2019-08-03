@@ -1,4 +1,5 @@
-Annee,Reussite
+// taux.csv
+date,value
 1960,69.84%
 1961,54.63%
 1962,54.62%
