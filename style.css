@@ -3,9 +3,27 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  text-align: center;
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
+}
+.footer {
+	margin-top: 40px;
+}
+.shareLink a {
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+#source {
+  text-align: right;
+}
+
+a {
+	  text-decoration: none;
+  
 }
