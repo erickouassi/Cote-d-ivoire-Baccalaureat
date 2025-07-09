@@ -171,7 +171,7 @@ function updateLanguage(lang) {
     document.getElementById('page-title').textContent = translations[lang].pageTitle;
     document.getElementById('main-title').textContent = translations[lang].mainTitle;
     document.getElementById('description').textContent = translations[lang].description;
-    document.getElementById('footer-text').innerHTML = `${translations[lang].footerText}<a href="https://www.exemple-source.com" id="source">${translations[lang].sourceText}</a> 🫶🏿`;
+    document.getElementById('footer-text').innerHTML = `${translations[lang].footerText}<a href="https://github.com/erickouassi/Cote-d-ivoire-Baccalaureat" id="source">${translations[lang].sourceText}</a> 🫶🏿`;
     document.getElementById('contact-link').textContent = translations[lang].contactText;
     document.getElementById('share-text').textContent = translations[lang].shareText;
     document.getElementById('twitter-link').textContent = translations[lang].twitterText;
