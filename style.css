@@ -1,29 +1,115 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-  text-align: center;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em auto;
+    text-align: center;
+    max-width: 1200px;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
-}
-.footer {
-	margin-top: 40px;
-}
-.shareLink a {
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 16px;
-}
-#source {
-  text-align: right;
+    font-style: italic;
+    color: #373fff;
+    font-size: 2.5em;
 }
 
-a {
-	  text-decoration: none;
-  
+p {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.shareLink {
+    margin-top: 30px;
+}
+
+.shareLink a {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #373fff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.shareLink a:hover {
+    background-color: #2a2fd1;
+}
+
+#source {
+    text-align: right;
+    display: block;
+    background-color: transparent;
+    color: #373fff;
+    font-size: 1em;
+}
+
+#myChart {
+    max-height: 500px;
+}
+
+.language-toggle {
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+.lang-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #373fff;
+    background-color: #fff;
+    color: #373fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn.active, .lang-btn:hover {
+    background-color: #373fff;
+    color: white;
+}
+
+.year-input {
+    margin: 1em 0;
+}
+
+.year-input label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.year-input input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #373fff;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.year-input button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #373fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.year-input button:hover {
+    background-color: #2a2fd1;
+}
+
+#year-result {
+    margin-top: 1em;
+    font-weight: bold;
 }

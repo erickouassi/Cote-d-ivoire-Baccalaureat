@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Le taux de réussite au Baccalauréat en Côte-d’Ivoire</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-  </head>  
-  <body>
-    <h1>Le taux de réussite au Baccalauréat en Côte-d’Ivoire de 1960 à 2024</h1>
-    <canvas id="myChart" width="500" height="200"></canvas>
-    
-      <div id="source">
-      Last Updated: 7/10/2024 || Inspired By: <a 
-    href="https://m.facebook.com/story.php?story_fbid=2430240017052260&id=196581290418155&sfnsn=mo" target="_blank">source link</a>🫶🏿
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Évolution du taux de réussite au Baccalauréat en Côte d'Ivoire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2/dist/chartjs-plugin-annotation.min.js"></script>
+</head>
+<body>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="fr">Français</button>
+        <button class="lang-btn" data-lang="en">English</button>
     </div>
+
+    <h1 id="main-title">Évolution du taux de réussite au Baccalauréat en Côte d'Ivoire (1960-2025)</h1>
+    
+    <p id="description">Ce graphique illustre l'évolution du taux de réussite au Baccalauréat en Côte d'Ivoire de 1960 à 2025. Les données proviennent de sources officielles et de rapports publiés dans divers médias.</p>
+    
+    <div class="year-input">
+        <label id="year-label">Entrez une année (1960-2025) :</label>
+        <input type="number" id="year-input" min="1960" max="2025" placeholder="1960">
+        <button id="year-submit">Afficher</button>
+        <p id="year-result"></p>
+    </div>
+    
+    <canvas id="myChart" alt="Graphique à barres montrant le taux de réussite du Baccalauréat en Côte d'Ivoire de 1960 à 2025"></canvas>
+    
     <div class="footer">
-        <p>
-          by <a href="http://www.twitter.com/Eric_kouassi">@Eric_Kouassi</a> | 
-          <a href="mailto:hello@erickouassi.com">Contact</a>
+        <p id="footer-text">Dernière mise à jour : 8/7/2025 || Inspiré par : <a href="https://www.exemple-source.com" id="source">Source des données</a> 🫶🏿</p>
+        <p class="shareLink">
+            by @Eric_Kouassi | 
+            <a href="mailto:eric.kouassi@example.com" id="contact-link">Contact</a>
         </p>
-        </div> 
-        <p>
-         Partager:
-          <div class="shareLink">
-<a href="https://twitter.com/share?url=https://ek-cote-d-ivoire-baccalaureat.glitch.me/&text=Le taux de réussite au Baccalauréat en Côte-d’Ivoire de 1960 à 2019" target="_blank">
-    Twitter
-</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://ek-cote-d-ivoire-baccalaureat.glitch.me/" target="_blank">
-    Facebook
-</a>
-    <a href="https://www.linkedin.com/shareArticle?url=https://ek-cote-d-ivoire-baccalaureat.glitch.me/&title=Le taux de réussite au Baccalauréat en Côte-d’Ivoire&source=https://ek-cote-d-ivoire-baccalaureat.glitch.me/" target="_blank">
-    LinkedIn
-</a>
-   <a href="mailto:?
-subject=Le%20taux%20de%20r%C3%A9ussite%20au%20Baccalaur%C3%A9at%20en%20C%C3%B4te-d%E2%80%99Ivoire%20&amp;
-body=Le%20taux%20de%20r%C3%A9ussite%20au%20Baccalaur%C3%A9at%20en%20C%C3%B4te-d%E2%80%99Ivoire%20de%201960%20%C3%A0%202023.%0ACopy%20and%20paste%20the%20link%20below%20in%20your%20browser.
-     %0ALink%3A%20https%3A%2F%2Fek-cote-d-ivoire-baccalaureat.glitch.me%2F%20">
-Send mail</a>
-</div>
-    </p>
-  </body>
+        
+        <div class="shareLink">
+            <p id="share-text">Partager :</p>
+            <a href="https://twitter.com/intent/tweet?text=Évolution du taux de réussite au Bac en Côte d'Ivoire&url=https://votre-url.com" id="twitter-link" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://votre-url.com" id="facebook-link" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://votre-url.com&title=Évolution du taux de réussite au Bac en Côte d'Ivoire" id="linkedin-link" target="_blank">LinkedIn</a>
+            <a href="mailto:?subject=Évolution du taux de réussite au Baccalauréat en Côte d'Ivoire&body=Consultez ce graphique intéressant : https://votre-url.com" id="mail-link">Envoyer par mail</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
 </html>
